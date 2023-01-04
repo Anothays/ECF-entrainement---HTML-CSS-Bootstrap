@@ -17,46 +17,55 @@ header {
     background: linear-gradient(284deg, rgba(176,210,116,1) 0%, rgba(255,255,255,1) 100%); 
 }
 
-header::after {
-    content: '';
-    
-}
-
-.logo {
-    width: 10%;
-    margin: 5px;
-}
-
-.logo img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
 .navbar {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
-    
 }
 
 .navbar .menu {
-    padding-right: 7%;
-    padding-left: 1%;
-    padding-top: 5%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .navbar .menu li {
     list-style: none;
-    padding: 10%;
-    margin: 1% 0;
+    padding: 10px;
+    margin: 10px 0;
 }
-
 
 .navbar .menu li a {
     text-decoration: none;
     color: #008000;
+}
+
+.ass-name {
+    font-family: fantasy;
+    color: #008000;
+    font-size: x-large;
+    user-select: none;
+}
+
+.logo-and-title-container {
+    display: flex;
+    align-self: center;
+    justify-content: flex-start;
+    margin: 5px;
+}
+
+.logo {
+    width: 15%;
+    max-width: 30px;
+    height: auto;
+    margin: 5px;
+}
+
+.logo img {
+   
+    width: 100%;
+    height: auto;
 }
 
 
@@ -73,7 +82,6 @@ header::after {
     width: auto;
     transform: translateX(200%);
     transition: 0.3s;
-    z-index: 1;
     box-shadow: grey -5px 0 15px 0px;
     z-index: 1;
 }
@@ -165,19 +173,18 @@ li:hover {
         display: none;
     }
 
-    .menu {
+    .navbar .menu {
         flex-direction: row;
         justify-content: start;
         align-items: center;
-        position : static;
         height: 100%;
-        width: 100%;
         background-color: transparent;
         transform: translateX(0);
         transition: none;
-        z-index: 0;
         box-shadow: none;
         z-index: 4;
+        padding: 0;
+        
     }
 
     .navbar {
@@ -187,12 +194,22 @@ li:hover {
     }
 
     .navbar .menu li {
-        padding: 1%;
+        padding: 0 20px;
+        margin: 0;
     }
 
     .navbar .menu li:hover {
         background-color: lightblue;
         transition: all 0.3s;
+    }
+
+    .ass-name {
+        font-family: fantasy;
+        color: #008000;
+        font-size: x-large;
+        user-select: none;
+        align-self: flex-start;
+        justify-self: flex-start;
     }
 }
 
@@ -216,9 +233,11 @@ FOOTER ------------------------------------
 .footer-container {
     background-color: lightgreen;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2%;
 }
 
 .footer a {
@@ -230,21 +249,28 @@ FOOTER ------------------------------------
 MAIN ------------------------------------
 */
 .main {
-    background: linear-gradient(284deg, rgba(176,210,116,1) 0%, rgba(255,255,255,1) 100%); 
+    /* background: linear-gradient(284deg, rgba(176,210,116,1) 0%, rgba(255,255,255,1) 100%);  */
+    background: url(../images/foret.jpg); 
     display: flex;
     flex-direction: column;
     padding-top: 10%;
 }
 
 .main h1, .main h2 {
-    padding: 0% 5%;
-    color: green;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
     font-size: 100%;
+}
+
+.main article {
+    margin: 5%;
+    border-radius: 20px;
+    background-color:white;
 }
 
 .main h1 {
     width: 100%;
+    text-align: center;
+    font-size:x-large;
 }
 
 strong {
