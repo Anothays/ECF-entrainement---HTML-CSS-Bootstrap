@@ -1,0 +1,68 @@
+.main .article {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.evenements-list {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.evenements-list li {
+    margin-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.main .card p {
+    text-align:start;
+}
+
+.article .img-container {
+    display: flex;
+}
+
+.article .img-container img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center ;
+    }
+
+    .main .article {
+        width: 100%;    
+    }
+
+    .article .img-container img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 0 0 20px;
+        box-shadow: 10px 0px 15px 1px grey;
+    }
+
+    .evenements-list li {
+        margin-bottom: 20px;
+        border: 1px solid grey;
+        border-radius: 20px;
+    }
+}
