@@ -52,11 +52,12 @@ header {
 
 
 /*Non de l'association dans le header*/
-.ass-name {
+.navbar .logo-and-title-container .ass-name a{
     font-family: fantasy;
     color: #008000;
     font-size: x-large;
     user-select: none;
+    text-decoration: none;
 }
 
 .logo-and-title-container {
