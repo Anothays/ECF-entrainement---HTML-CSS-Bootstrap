@@ -242,7 +242,7 @@ MAIN------------------------------------------------------------------------
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 7em;
     width: 100%;
     min-height: 75vh;
 }
