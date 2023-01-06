@@ -35,9 +35,11 @@ header {
     margin: 10px 0;
 }
 
-.navbar .menu  a:hover, 
-.navbar .menu  a:focus,
-.navbar .menu  a:active    {
+.navbar .menu .active {
+    color: white;
+}
+
+.navbar .menu  a:hover {
     color: white;
     transition: 0.3s;
     border-radius: 20px;
