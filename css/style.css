@@ -280,21 +280,10 @@ MAIN------------------------------------------------------------------------
 }
 
 .main article p {
-    text-align: justify;
-    width: 100%;
     border: 1 solid black;
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
 }
-
-.article img {
-    width: 250px;
-    height: auto;
-    max-height: 200px;
-    border-radius: 20px;
-    
-}
-
 
 
 @media screen and (min-width: 800px) {
