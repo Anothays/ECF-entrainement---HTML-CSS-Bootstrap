@@ -1,11 +1,15 @@
 /*
-MAIN
+MAIN------------------------------------------------------------------------
 */
 
 .main article {
     height: 65vh;
 }
 
+.main h2 {
+    color: white;
+    text-align: center;
+}
 
 /*
 FORMULAIRE INSCRIPTION
@@ -33,7 +37,9 @@ FORMULAIRE INSCRIPTION
 }
 
 .inscription-form .submit-btn {
-    width: 100%;
+    width: 50%;
+    font-size:medium;
+    align-self: center;
     margin-top: 20px;
     padding : 20px;
     background-color: lightgreen;
@@ -56,4 +62,14 @@ FORMULAIRE INSCRIPTION
         height: 65vh;
     }
 
+    .inscription-form .submit-btn {
+        font-size: x-large;
+    }
+
+}
+
+@media screen and (min-width: 350px ) {
+    .inscription-form .submit-btn {
+        font-size: x-large;
+    }
 }
