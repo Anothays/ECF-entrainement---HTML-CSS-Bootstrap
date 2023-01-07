@@ -64,6 +64,7 @@ FORMULAIRE INSCRIPTION
 
     .inscription-form .submit-btn {
         font-size: x-large;
+        width: 25%;
     }
 
 }
